@@ -1,7 +1,7 @@
 == Refinery/Twitter Bootstrap Base
 
 Pull it down:
-git clone https://github.com/mostlyclicks/rc01.git name_of_your_app
+git clone https://github.com/mostlyclicks/time01.git name_of_your_app
 
 PG setup
 createuser name_of_your_app
@@ -9,8 +9,8 @@ createdb -O name_of_your_app -Eutf8 name_of_your_app_development
 
 In sublime
 Find and replace (command-shift-F) in app directory
-1. Replace rc01 with name_of_your_app (~9 occurences, 4 files)
-2. Replace Rc01 with NameOfYourApp (~11 occurences, 10 files)
+1. Replace time01 with name_of_your_app (~9 occurences, 4 files)
+2. Replace Time01 with NameOfYourApp (~11 occurences, 10 files)
 
 Run bundle install
 bundle install
