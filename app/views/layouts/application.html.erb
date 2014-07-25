@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<%= render "/refinery/html_tag" %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <head>
+    <%= render "/refinery/head" %>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body id="<%= canonical_id @page %>">
+    <%= site_bar -%>
+    <div id="page_container">
+<!--       <header id="header">
+        <%#= render "/refinery/header" -%>
+      </header> -->
+      <section id="page">
+        <%= yield %>
+      </section>
+      <section id="bike">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 ">
+              <%= image_tag 'Skylon-Red_bike.png', class: 'img-responsive' %>
+            </div>
+          </div>
+        </div>
+        
+
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <%= render "/refinery/footer" -%>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <%= render "/refinery/javascripts" %>
+  </body>
+</html>

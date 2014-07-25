@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row" id="header">
+    <div class="col-lg-3">
+      <%= image_tag 'time-logo.png', class: 'img-responsive' %>
+    </div>
+    <div class="col-lg-9">
+      <h2 class="text-right">2014</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row" id="main">
+    <div class="col-lg-8">
+      <%= raw @page.content_for(:body) %>
+    </div>
+    <div class="col-lg-4">
+      <%#= @page.content_for(:sidebar) %>
+      <div class="row" id="catalog">
+        <div class="col-lg-6">
+          <h3>2014 Catalog</h3>
+          <p>See our range of high performance racing and sportive bikes, frames and pedals. All designed and made in France.</p>
+          <p>Download our catalog.</p>
+        </div>
+        <div class="col-lg-6">
+          <%= image_tag 'catalog-cover.png', class: 'img-responsive' %>
+        </div>
+      </div>
+      <div class="row" id="contacts">
+        <div class="col-lg-12">
+          <h4><span>US Sales: </span><a href="mailto:sales@timesportusa.com">sales@timesportusa.com</a></h4>
+          <h4><span>Warranty:</span> <a href="mailto:service@timesportusa.com">service@timesportusa.com</a></h4>
+          <h4><span>Info:</span> <a href="mailto:info@timesportusa.com">info@timesportusa.com</a></h4>
+
+        </div>
+
+
+      </div>
+      <div class="row" id="press-release">
+        <div class="col-lg-12"><h3><a href="#"><span class="fa fa-file-text-o"></span> Press Release: July 25, 2014</a></h3></div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<%#= render '/refinery/content_page' %>

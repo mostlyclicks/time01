@@ -1,1 +1,74 @@
 /* custom styles */
+
+$time-red:rgb(237, 28, 36);
+$main-font:'Helvetica Neue', Helvetica, arial, sans-serif;
+body {
+  background-image: url(/assets/background.jpg);
+  background-size: cover;
+  p {
+    color:rgba(255,255,255,.7);
+  }
+}
+
+
+h1, h2, h3, h4 {
+  color:$time-red; 
+  font-family: $main-font;
+  font-weight:100;
+}
+
+h1 {font-size:48px;}
+h4 {font-weight:200;}
+
+#header {
+  padding-top:80px;
+  border-bottom:1px solid $time-red;
+}
+
+#main {
+  margin-top:40px;
+  h1 {
+    color:rgba(255,255,255,.7);
+  }
+  p.lead {
+    color:rgba(255,255,255,.5);
+    font-weight:100;
+  }
+}
+
+#catalog {
+  img {
+    border:5px solid rgba(255,255,255,.2);
+  }
+  border-bottom:1px solid rgba(255,255,255,.1);
+  padding-bottom:20px;
+}
+
+#contacts {
+  font-weight:200;
+  border-bottom:1px solid rgba(255,255,255,.1);
+  span {
+    display:block;
+    float:left;
+    width:40%;
+        font-weight:200;
+    letter-spacing: .05em;
+    
+    margin-bottom:4px;
+  }
+  a {
+    display:block;
+    color:rgba(255,255,255,.7);
+    font-weight:200;
+    letter-spacing: .05em;
+    
+  }
+}
+
+#press-release {
+  h3 {font-weight:200;}
+  a {
+    color:$time-red;
+  }
+}
+
