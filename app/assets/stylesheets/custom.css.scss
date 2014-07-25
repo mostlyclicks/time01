@@ -37,6 +37,9 @@ h4 {font-weight:200;}
 }
 
 #catalog {
+  a {
+    color:$time-red;
+  }
   img {
     border:5px solid rgba(255,255,255,.2);
   }
@@ -70,5 +73,11 @@ h4 {font-weight:200;}
   a {
     color:$time-red;
   }
+}
+
+#footer {
+  border-top:1px solid $time-red;
+  padding:20px 0;
+  height:80px;
 }
 
