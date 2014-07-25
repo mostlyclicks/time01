@@ -1,6 +1,7 @@
 /* custom styles */
 
 $time-red:rgb(237, 28, 36);
+$time-red-alpha:rgba(237, 28, 36, .5);
 $main-font:'Helvetica Neue', Helvetica, arial, sans-serif;
 body {
   background-image: url(/assets/background.jpg);
@@ -22,7 +23,7 @@ h4 {font-weight:200;}
 
 #header {
   padding-top:80px;
-  border-bottom:1px solid $time-red;
+  border-bottom:1px solid $time-red-alpha;
 }
 
 #main {
@@ -76,7 +77,7 @@ h4 {font-weight:200;}
 }
 
 #footer {
-  border-top:1px solid $time-red;
+  border-top:1px solid $time-red-alpha;
   padding:20px 0;
   height:80px;
 }
