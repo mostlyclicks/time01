@@ -25,7 +25,7 @@ Refinery::Core.configure do |config|
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to
   # Google Analytics are made.
-  # config.google_analytics_page_code = "UA-xxxxxx-x"
+  config.google_analytics_page_code = "UA-1154327-17"
 
   # Enable/disable authenticity token on frontend
   # config.authenticity_token_on_frontend = false
@@ -46,3 +46,15 @@ Refinery::Core.configure do |config|
   # Specify a different backend path than the default of /refinery.
   # config.backend_route = "refinery"
 end
+
+
+# <script>
+#   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+#   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+#   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+#   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+#   ga('create', 'UA-1154327-17', 'auto');
+#   ga('send', 'pageview');
+
+# </script>
