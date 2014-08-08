@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      home_features:
+        title: Home Features
+    home_features:
+      admin:
+        home_features:
+          actions:
+            create_new: Nieuwe Home Feature toevoegen
+            reorder: De volgorde van de Home Features wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Home Feature-volgorde
+          records:
+            title: Home Features
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Home Features. Druk op 'Nieuwe Home Feature toevoegen' om de eerste toe te voegen.
+          home_feature:
+            view_live_html: Deze home feature op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze home feature
+            delete: Deze home feature definitief verwijderen
+      home_features:
+        show:
+          other: Andere Home Features
+  activerecord:
+    attributes:
+      'refinery/home_features/home_feature':
+        title: Title
+        description: Description
+        main_image: Main Image
+        background_image: Background Image

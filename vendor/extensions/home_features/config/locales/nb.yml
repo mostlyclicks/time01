@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      home_features:
+        title: Home Features
+    home_features:
+      admin:
+        home_features:
+          actions:
+            create_new: Lag en ny Home Feature
+            reorder: Endre rekkefølgen på Home Features
+            reorder_done: Ferdig å endre rekkefølgen Home Features
+          records:
+            title: Home Features
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Home Features enda. Klikk på "Lag en ny Home Feature" for å legge til din første home feature.
+          home_feature:
+            view_live_html: Vis hvordan denne home feature ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne home feature
+            delete: Fjern denne home feature permanent
+      home_features:
+        show:
+          other: Andre Home Features
+  activerecord:
+    attributes:
+      'refinery/home_features/home_feature':
+        title: Title
+        description: Description
+        main_image: Main Image
+        background_image: Background Image

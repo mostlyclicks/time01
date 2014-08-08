@@ -1,0 +1,48 @@
+<%= form_for [refinery, :home_features_admin, @home_feature] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @home_feature,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "home_features/home_feature" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :main_image_id,
+               :image => @home_feature.main_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :background_image -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :background_image_id,
+               :image => @home_feature.background_image,
+               :toggle_image_display => false -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.home_features.admin.home_features.home_feature'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @home_feature.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

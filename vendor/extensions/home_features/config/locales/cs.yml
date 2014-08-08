@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      home_features:
+        title: Home Features
+    home_features:
+      admin:
+        home_features:
+          actions:
+            create_new: Přidat Home Feature
+            reorder: Řadit Home Features
+            reorder_done: Konec řazení Home Features
+          records:
+            title: Home Features
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Home Features. Zvolte "Přidat Home Feature" pro přidání prvního home feature.
+          home_feature:
+            view_live_html: Zobrazit náhled home feature<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit home feature
+            delete: Smazat home feature
+      home_features:
+        show:
+          other: Další Home Features
+  activerecord:
+    attributes:
+      'refinery/home_features/home_feature':
+        title: Title
+        description: Description
+        main_image: Main Image
+        background_image: Background Image

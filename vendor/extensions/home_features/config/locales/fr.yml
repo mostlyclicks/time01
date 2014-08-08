@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      home_features:
+        title: Home Features
+    home_features:
+      admin:
+        home_features:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Home Feature
+            reorder: Réordonner les Home Features
+            reorder_done: Fin de réordonnancement des Home Features
+          records:
+            title: Home Features
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Home Feature. Cliquer sur "Créer un(e) nouve(au/l/lle) Home Feature" pour créer votre premi(er/ère) home feature.'
+          home_feature:
+            view_live_html: Voir ce(t/tte) home feature <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) home feature
+            delete: Supprimer définitivement ce(t/tte) home feature
+      home_features:
+        show:
+          other: Autres Home Features
+  activerecord:
+    attributes:
+      'refinery/home_features/home_feature':
+        title: Title
+        description: Description
+        main_image: Main Image
+        background_image: Background Image

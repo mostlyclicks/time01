@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      home_features:
+        title: Home Features
+    home_features:
+      admin:
+        home_features:
+          actions:
+            create_new: 建立新的 Home Feature
+            reorder: 对 Home Features 重新排序
+            reorder_done: 对 Home Features 的重新排序结束
+          records:
+            title: Home Features
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Home Features yet. Click "Add New Home Feature" to add your first home feature.
+            no_items_yet: 目前没有 Home Features . 点击 "Add New Home Feature" 创建一个home feature.
+          home_feature:
+            view_live_html: 查看 home feature 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 home feature
+            delete: 永久删除 home feature
+      home_features:
+        show:
+          other: 其他 Home Features
+  activerecord:
+    attributes:
+      'refinery/home_features/home_feature':
+        title: Title
+        description: Description
+        main_image: Main Image
+        background_image: Background Image

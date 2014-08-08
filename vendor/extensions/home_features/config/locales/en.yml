@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      home_features:
+        title: Home Features
+    home_features:
+      admin:
+        home_features:
+          actions:
+            create_new: Add New Home Feature
+            reorder: Reorder Home Features
+            reorder_done: Done Reordering Home Features
+          records:
+            title: Home Features
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Home Features yet. Click "Add New Home Feature" to add your first home feature.
+          home_feature:
+            view_live_html: View this home feature live <br/><em>(opens in a new window)</em>
+            edit: Edit this home feature
+            delete: Remove this home feature forever
+      home_features:
+        show:
+          other: Other Home Features
+  activerecord:
+    attributes:
+      'refinery/home_features/home_feature':
+        title: Title
+        description: Description
+        main_image: Main Image
+        background_image: Background Image

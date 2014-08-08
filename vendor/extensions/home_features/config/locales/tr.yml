@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      home_features:
+        title: Home Features
+    home_features:
+      admin:
+        home_features:
+          actions:
+            create_new: Yeni Ekle Home Feature
+            reorder: Tekrar sirala Home Features
+            reorder_done: Tekrar siralama tamamlandiHome Features
+          records:
+            title: Home Features
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Home Features yok henuz.  Tikla "Yeni Ekle Home Feature" eklemek senin ilk home feature.
+          home_feature:
+            view_live_html: Bunu canlu home feature goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle home feature
+            delete: Bunu Sil home feature sonsuza dek
+      home_features:
+        show:
+          other: Diger Home Features
+  activerecord:
+    attributes:
+      'refinery/home_features/home_feature':
+        title: Title
+        description: Description
+        main_image: Main Image
+        background_image: Background Image

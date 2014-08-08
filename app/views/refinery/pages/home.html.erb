@@ -9,47 +9,86 @@
   </div>
 </div>
 
+
+
+<div class="container">
+
+<div id="main-carousel" class="carousel slide" data-ride="carousel" style="min-height:300px;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <% @home_features.each_with_index do |image, index| %>
+    <li data-target="#main-carousel" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
+    <% end %>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner row">
+    <% @home_features.each_with_index do |feature, index| %>
+      <div class="item row <% if index == 0 %>active<% end %>">
+      <div id="home-feature-image" class="col-md-8"><%= image_tag feature.main_image.url, class: 'img-responsive'  %></div>
+      <div id="home-text" class="col-md-4">
+        <h1><%= feature.title %></h1>
+        <%= raw feature.description %>
+      </div>
+<!--       <div class="carousel-caption">
+        ...
+      </div> -->
+    </div>
+    <% end %>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+</div>
+
+
+
+
+
+
+
 <div class="container">
   <div class="row" id="main">
-    <div class="col-lg-8">
-      <%= raw @page.content_for(:body) %>
-    </div>
     <div class="col-lg-4">
-      <%#= @page.content_for(:sidebar) %>
-      <div class="row" id="catalog">
-        <div class="col-lg-6">
-          <h3>2014 Catalog</h3>
-          <p>See our range of high performance racing and sportive bikes, frames and pedals. All designed and made in France.</p>
-          <p><a href="https://s3.amazonaws.com/timesportusa/CAT-GENERAL_ang-2014.pdf" target="_blank">
-            <span class="fa fa-file-pdf-o"></span> Download our catalog.<br /><small>(84.1 MB)</small></a></p>
-          <p>
-            <a href="https://s3.amazonaws.com/timesportusa/CAT-PEDALS_ang-2014.pdf" target="_blank">
-              <span class="fa fa-file-pdf-o"></span> Download our Pedal Catalog.<br /><small>(32.1 MB)</small>
-            </a>
-          </p>
-        </div>
-        <div class="col-lg-6">
-          <%= image_tag 'catalog-cover.png', class: 'img-responsive' %>
-        </div>
-      </div>
-      <div class="row" id="contacts">
-        <div class="col-lg-12">
-          <h4><span>US Sales: </span><a href="mailto:sales@timesportusa.com">sales@timesportusa.com</a></h4>
+      <%= raw @page.content_for(:body) %>
+            <p id="press-release"><a href="https://s3.amazonaws.com/timesportusa/TimeSportUSA_press_release_073114_vt.pdf"><span class="fa fa-file-text-o"></span> Press Release: August 4, 2014</a></p>
+
+      
+    </div>
+    <div class="col-lg-4" id="catalog">
+      
+        <h3>2014 Catalog</h3>
+        <p><%= image_tag 'catalog-cover.png', class: 'img-responsive', style: 'width:40%;float:right;margin:0 0 15px 15px;' %>See our range of high performance racing and sportive bikes, frames and pedals. All designed and made in France.</p>
+        <p><a href="https://s3.amazonaws.com/timesportusa/CAT-GENERAL_ang-2014.pdf" target="_blank">
+          <span class="fa fa-file-pdf-o"></span> Download our catalog.<br /><small>(84.1 MB)</small></a></p>
+        <p>
+          <a href="https://s3.amazonaws.com/timesportusa/CAT-PEDALS_ang-2014.pdf" target="_blank">
+            <span class="fa fa-file-pdf-o"></span> Download our Pedal Catalog.<br /><small>(32.1 MB)</small>
+          </a>
+        </p>
+    </div>
+
+    <div class="col-lg-4" id="contacts">
+      <h3>Contact</h3>
+       <h4><span>US Sales: </span><a href="mailto:sales@timesportusa.com">sales@timesportusa.com</a></h4>
           <h4><span>Warranty:</span> <a href="mailto:service@timesportusa.com">service@timesportusa.com</a></h4>
           <h4><span>Info:</span> <a href="mailto:info@timesportusa.com">info@timesportusa.com</a></h4>
           <h4><span>Tel:</span></h4>877.727.7661
-          
-          
-          
-
-        </div>
 
 
-      </div>
-      <div class="row" id="press-release">
-        <div class="col-lg-12"><h3><a href="https://s3.amazonaws.com/timesportusa/TimeSportUSA_press_release_073114_vt.pdf"><span class="fa fa-file-text-o"></span> Press Release: August 4, 2014</a></h3></div>
+    </div>
 
-      </div>
+    <div class="col-lg-4">
+
+  
+
       <div class="row" id="web-link">
           <div class="col-lg-12">
             Time Sport France: <a href="http://www.time-sport.com">www.time-sport.com</a>

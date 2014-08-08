@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      home_features:
+        title: Home Features
+#        article: masculino/femenino
+    home_features:
+      admin:
+        home_features:
+          actions:
+            create_new: Crear nuevo home feature
+            reorder: Reordenar home features
+            reorder_done: Reordenación de home features completada
+          records:
+            title: Home Features
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay home features todavía. Pulsa en "Crear nuevo Home Feature" para crear tu primer home feature.
+          home_feature:
+            view_live_html: Ver este home feature como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este home feature
+            delete: Borrar este home feature para siempre
+      home_features:
+        show:
+          other: Otros home features
+  activerecord:
+    attributes:
+      'refinery/home_features/home_feature':
+        title: Title
+        description: Description
+        main_image: Main Image
+        background_image: Background Image
