@@ -10,7 +10,7 @@
 </div>
 
 
-
+<% content_for :carousel do %>
 <div class="container">
 
 <div id="main-carousel" class="carousel slide" data-ride="carousel" style="min-height:300px;">
@@ -47,9 +47,34 @@
 </div>
 
 </div>
+<% end %>
 
+<style>
+.lead {
+  font-size:17px;
+  font-weight:100;
+  letter-spacing:.075em;
 
+}
 
+</style>
+
+<div class="container" id="roland-cattin">
+  <div class="row">
+    <div class="col-lg-4" style="padding:20px 20px 0 0;">
+      <p class="lead">We are very sad to announce the passing of TIME Sport International’s Founder and President, Mr. Roland Cattin.</p> 
+
+      <p class="lead">Mr. Cattin was as a kind, determined, and honest man. He was a visionary that helped make clipless pedals and the use of carbon fiber in bicycles a reality. Production of TIME products remained in France because he cared for his employees and wanted to maintain the high quality that TIME is known for.</p>
+
+      <p class="lead">We were very fortunate to know and work for Mr. Cattin.  We will remember his charm and kindness.</p>
+
+      <p class="lead">Mr. Cattin will be greatly missed.</p> 
+    </div>
+    <div class="col-lg-8" style="padding:20px 0;">
+      <%= image_tag 'Home-page-RC-01.jpg', class: 'img-responsive' %>
+    </div>
+  </div>
+</div>
 
 
 
